@@ -299,7 +299,7 @@ let deliveryOption = {
 		redirect: "follow"
 	};
 
-	fetch("https://jesoevents.com/.netlify/functions/api", requestOptions)
+	fetch("https://jesoevents-stripe.netlify.app/.netlify/functions/api", requestOptions)
 		.then((response) => response.text())
 		.then((result) => location.href = result)
 		.catch((error) => console.error(error));
