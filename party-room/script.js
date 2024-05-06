@@ -11,8 +11,8 @@ function sendEmail() {
 
     Email.send({
         SecureToken : "cfbe2caa-b74b-4f2d-8d2a-d17557da68f5",
-        To : 'umehchidindu@gmail.com',
-        From : "umehchidindu@gmail.com",
+        To : 'jesoevent@gmail.com',
+        From : "contact@jesoevents.com",
         Subject : 'New Party Room Booking',
         Body : bodyMessage
     }).then(

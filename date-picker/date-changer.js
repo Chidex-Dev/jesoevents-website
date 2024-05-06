@@ -32,42 +32,42 @@ function checkBookedDates() {
                 year: "2024"
             },
             email: 'alert@bsf.com'
-        },
+        }
     
     
         // array of objects that can hold 2 values... first value is object of 3string day, month, year && second value is string of email
-        {
-            date: {
-                day: "22",
-                month: "March",
-                year: "2024"
-            },
-            email: 'alert@bsf.com'
-        },
-        {
-            date: {
-                day: "23",
-                month: "March",
-                year: "2024"
-            },
-            email: 'alert@bsf.com'
-        },
-        {
-            date: {
-                day: "24",
-                month: "March",
-                year: "2024"
-            },
-            email: 'alert@bsf.com'
-        },
-        {
-            date: {
-                day: "25",
-                month: "March",
-                year: "2024"
-            },
-            email: 'alert@bsf.com'
-        }
+        // {
+        //     date: {
+        //         day: "22",
+        //         month: "March",
+        //         year: "2024"
+        //     },
+        //     email: 'alert@bsf.com'
+        // },
+        // {
+        //     date: {
+        //         day: "23",
+        //         month: "March",
+        //         year: "2024"
+        //     },
+        //     email: 'alert@bsf.com'
+        // },
+        // {
+        //     date: {
+        //         day: "24",
+        //         month: "March",
+        //         year: "2024"
+        //     },
+        //     email: 'alert@bsf.com'
+        // },
+        // {
+        //     date: {
+        //         day: "25",
+        //         month: "March",
+        //         year: "2024"
+        //     },
+        //     email: 'alert@bsf.com'
+        // }
     ]
 
     

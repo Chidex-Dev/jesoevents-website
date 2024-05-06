@@ -475,7 +475,7 @@ function getDetails({ productTitle, productCategory }) {
 
 <div class="qodef-content-grid">
 <div style="display: flex; justify-content: flex-end">
-  <a itemprop="url" class="qodef-breadcrumbs-link" onclick="closeProductDetails()"><h5 style="cursor: pointer">< Go Back</h5></a>
+  <a itemprop="url" class="qodef-breadcrumbs-link" onclick="closeProductDetails()"><h5 style="cursor: pointer"><img src="/assets/images/icons8-close.svg"></h5></a>
 </div>
 <br>
   <main id="qodef-page-content" class="qodef-grid qodef-layout--template qodef--no-bottom-space">
