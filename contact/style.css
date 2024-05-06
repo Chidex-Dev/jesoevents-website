@@ -1,0 +1,23 @@
+.wpcf7-form-control-wrap .item {
+    color: black;
+    font-weight: 500;
+}
+
+.wpcf7-form-control-wrap.error .item {
+    border: 1px solid #ff1100;
+}
+
+.wpcf7-form-control-wrap .item::placeholder {
+    font-weight: 100;
+}
+
+.wpcf7-form-control-wrap .error-txt {
+    color: #d93025;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.wpcf7-form-control-wrap.error .error-txt {
+    display: block;
+}

@@ -1,0 +1,12 @@
+.cart-maintain::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.cart-maintain {
+    overflow: hidden; 
+    overflow-y: scroll; 
+    height: 500px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+}

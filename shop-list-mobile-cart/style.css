@@ -1,0 +1,223 @@
+.popup {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000000cc;
+    display: none;
+    
+}
+
+.popup-content {
+    background-color: white;
+    margin: 6% auto;
+    padding: 20px;
+    border: 2px solid #000000;
+    width: 30%;
+    font-weight: bolder;
+}
+.popup-content button {
+    display: block;
+    margin: 0 auto;
+}
+.show {
+    display: block;
+}
+.popup-content h1 {
+    color: rgb(0, 0, 0);
+    font-size: 37px;
+}
+
+.popup-content h3 {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+.popup-content .close-popup {
+    text-align: right;
+    padding-top: 30px;
+}
+
+.quantity-cart {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    gap: 20px;
+}
+
+#qodef-woo-page.qodef--single .qodef-quantity-buttons {
+    margin: 0 8px 0 0;
+    border: 1px solid #bdb5aa;
+    padding-left: 95px;
+}
+
+.qodef-quantity-buttons:before {
+    content: 'Quantity';
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .3em;
+    color: #696359;
+    line-height: 1;
+}
+
+#qodef-woo-page .qodef-quantity-buttons .qodef-quantity-input, .woocommerce-page .qodef-content .qodef-quantity-buttons .qodef-quantity-input {
+    padding-left: 105px;
+}
+
+.btn-grid {
+    display: grid; 
+    grid-template-columns: auto auto auto; 
+    row-gap: 20px;
+}
+
+.color-header {
+    padding-top: 20px;
+}
+
+.input-header{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.size-btn {
+    font-family: Montserrat,sans-serif;
+    font-size: 11px;
+    line-height: 3.333em;
+    font-weight: 600;
+    letter-spacing: .3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 5px 27px;
+    cursor: pointer;
+    z-index: 3;
+    color: #696359;
+    background-color: transparent;
+    border: 1px solid #bdb5aa;
+}
+
+.color-btn {
+    font-family: Montserrat,sans-serif;
+    font-size: 11px;
+    line-height: 3.333em;
+    font-weight: 600;
+    letter-spacing: .3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 5px 27px;
+    cursor: pointer;
+    z-index: 3;
+    color: #696359;
+    background-color: transparent;
+    border: 1px solid #bdb5aa;
+}
+
+.color-input {
+    border: 1px solid #bdb5aa;
+    padding: 20px 30px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.qodef-woo-product-title{
+    text-align: left;
+}
+
+.qodef-woo-product-list ul.products {
+    display: grid; 
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .qodef-woo-product-list ul.products {
+        grid-template-columns: auto auto;
+        row-gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .qodef-woo-product-list ul.products {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .qodef-woo-product-list ul.products {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .qodef-content-grid {
+       width: 350px;
+    }
+
+    .btn-grid {
+        grid-template-columns: auto auto auto;
+        row-gap: 10px;
+    }
+
+    .popup-content h1 {
+        font-size: 22px;
+    }
+
+    .popup-content h3 {
+        font-size: 20px;
+    }
+
+    .size-btn {
+        font-size: 9px;
+        padding: 10px 14px;
+    }
+
+    .color-btn {
+        font-size: 9px;
+        padding: 10px 14px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .popup-content {
+        width: 85%;
+    }
+}
+
+
+@media only screen and (min-width: 640px) and (max-width: 900px){
+    .popup-content {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px){
+    .popup-content {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px){
+    .popup-content {
+        width: 40%;
+    }
+}
