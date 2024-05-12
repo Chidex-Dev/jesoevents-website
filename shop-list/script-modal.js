@@ -201,12 +201,14 @@ function pushItemToCart({ itemColor, itemSize, shipCost }) {
   console.log(shipCost)
 
   let itemPriceGrep = document.querySelector(".checkout-item-price")?.innerHTML;
-  itemPrice = itemPriceGrep
-    .replace("<bdi>", "")
-    .slice(0, itemPriceGrep.indexOf("<s"))
-    .replace("<span", "");
+  // itemPrice = itemPriceGrep
+  //   .replace("<bdi>", "")
+  //   .slice(0, itemPriceGrep.indexOf("<s"))
+  //   .replace("<span", "");
 
   let itemTitle = document.querySelector(".item-title").innerText;
+  itemPrice = document.getElementById(`productPrice-${itemTitle}`).childNodes[0].textContent;
+
 
   let userCarts = JSON.parse(localStorage.getItem("user-carts"));
 
@@ -289,7 +291,7 @@ function checkUserCarts() {
       <h6 itemprop="name" class="qodef-e-title entry-title">
         <a >${cartItem?.title}</a>
       </h6>
-      <p class="qodef-e-price"><span class="woocommerce-Price-amount amount"><bdi>${cartItem?.price}<span
+      <p class="qodef-e-price"><span class="woocommerce-Price-amount amount"><bdi id="productPrice">${cartItem?.price}<span
               class="woocommerce-Price-currencySymbol">$</span></bdi></span></p>
       <p class="qodef-e-quantity">Quantity: ${cartItem?.quantity}</p>
       <a onclick="removeItemFromCart(this)" id="${cartId}"
@@ -520,7 +522,7 @@ function getDetails({ productTitle, productCategory }) {
                 ${productItem?.productDescription}
               </p>
           <p class="price" style="font-weight: 600; color: #3e3930; font-size: 20px">
-            <span class="woocommerce-Price-amount amount"><bdi>CAD ${productItem?.productPrice}<span
+            <span class="woocommerce-Price-amount amount"><bdi>CAD </bdi><bdi id="productPrice-${productItem?.productTitle}">${productItem?.productPrice}<span
                   class="woocommerce-Price-currencySymbol">$</span></bdi></span>
           </p>
           <div class="woocommerce-product-details__short-description">
